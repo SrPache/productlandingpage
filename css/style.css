@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html{scroll-behavior: smooth;}
+
+body{ background-color: #fafafa;}
+
+#contenedor{
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.max{ width:100%; }
+
+#header{
+    position:sticky;
+    top:0;
+    width: 100%;
+    background-color:#eee;
+    color:rgb(161, 4, 4);
+    z-index:10;
+    border-bottom:1px solid #ccc
+}
+
+#header-max{
+    max-width:1600px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#header-logo{
+    text-decoration: none;
+    color:inherit;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    font-size:1.6rem;
+    gap:.5rem;
+    padding:.6rem 1.2rem;
+    text-transform: uppercase;
+}
+
+#header-img{
+    padding-top: 0rem;
+    max-width: 70px;
+}
+
+#nav-bar{
+    display:flex;
+    align-items: center;
+}
+
+#nav-bar ul{
+    display:flex;
+    flex-direction: row;    
+    justify-content:center;
+}
+
+#nav-bar ul li{
+    list-style-type: none;
+    display:inline-block
+}
+
+.nav-link{
+    display:inline-block;
+    color:black;
+    text-decoration: none;
+    padding:.6rem 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+#main-max{
+    max-width:850px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    gap:12vh;
+    padding-top:2vh;
+    margin-top:3rem;
+}
+
+#suscripcion{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+}
+
+#suscripcion h2{
+    font-size:2.3rem;
+}
+
+
+
+#form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+#form input:first-child{
+    border: 2px solid rgb(163, 53, 53);
+    width:90%;
+    max-width:500px;
+    margin:0 auto;
+    padding:.4rem .8rem;
+    font-size:1.2rem;
+    font-weight:400;
+    border-radius:5px;
+}
+
+#form input:first-child::placeholder{
+    color:rgb(253, 60, 60)8))
+    font-weight:300;
+}
+
+#form input:first-child:hover{
+    outline:none;
+    border:2px solid rgb(197, 0, 0);
+}
+
+#form input:first-child:focus,
+#form input:first-child:active{
+    outline:none;
+    border:2px solid rgb(255, 0, 0);
+}
+
+#form input[type="submit"]{
+    padding:.6rem 1.5rem;
+    margin: 0 auto;
+    border: 1px solid #333;
+    background:rgb(129, 16, 16);
+    font-weight: 400;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: .95rem;
+    border-radius:.25rem;
+}
+
+#form input[type="submit"]:hover{
+    background:white;
+    color:black;
+}
+
+#form input[type="submit"]:focus{
+    background:black;
+    border-color:black;
+    color:white;
+}
+#form input[type="submit"]:active{
+    background:#222;
+    border-color:#222;
+    color:white;
+}
+
+#features, #prices{
+    padding:1rem;
+    border-top:1px solid lightgrey;
+    border-bottom:1px solid lightgrey;
+}
+
+#features{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.features-containers{
+    display:flex;
+    gap: 1.5rem;
+    padding:1.5rem;
+}
+
+.features-containers div:nth-child(1){
+    width: 10%;
+    flex-shrink: 0;
+    display:flex;
+    justify-content: center;
+}
+
+.features-containers i{
+    color: rgb(129, 16, 16);
+    display:block;
+    font-size:3rem;
+    padding-top:.5rem;
+}
+
+.features-containers div:nth-child(2){
+    display:flex;
+    flex-direction: column;
+    gap:.3rem;
+}
+
+
+#how-it-works h2,
+#prices h2{
+    text-align:center;
+    font-size:2rem;
+}
+
+#how-it-works video{
+    padding-top:1.5rem;
+    width:100%
+}
+
+#prices{
+    width:100%;
+    padding:5%;
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    justify-content: space-between;
+    border-bottom:none;
+}
+
+#prices h2{
+    width:100%;
+    flex-shrink: 0;
+    margin-bottom:1rem;
+}
+
+.prices-containers{
+    background:white;
+    border:1px solid #666;
+    border-top-left-radius:.5rem;
+    border-top-right-radius:.5rem;
+    display:flex;
+    flex-direction:column;
+}
+
+.title-prices{
+    text-align:center;
+    background: rgb(129, 16, 16);
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    color:white;
+    padding:1rem;
+}
+
+.title-prices h3{
+    text-transform:uppercase;
+    font-weight: 500;
+}
+
+.description-prices strong{
+    display:block;
+    text-align:center;
+    font-size:1.6rem;
+    padding:1.6rem;
+    width:90%;
+    margin: 0 auto;
+}
+
+
+.description-prices ul{
+    width:max-content;
+    list-style-type: none;
+    padding:0 1rem;
+    margin: 0 auto;
+}
+
+.button-prices{
+    padding:.8rem;
+    margin: 1rem;
+    margin-top:1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#footer{
+    margin-top:1.5rem;
+    background-color:#444;
+    display:flex;
+    padding: 1rem;
+    flex-direction:column;
+    color: #eee;
+    text-align:center;
+    gap:.8rem;
+    font-size:small
+}
+
+#footer-categorias{
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+    padding: 0 2rem;
+    font-weight: 500;
+    gap:2rem;
+    font-size:1rem;
+}
+
+#footer-categorias a{
+    gap:1rem;
+    color:#ccc;
+    text-decoration: none;
+    
+}
+
+
+@media screen and (min-width:1000px) {
+    header{
+        padding:0 10vw;
+    }
+}
+
+@media screen and (max-width:830px) {
+    #header{
+        padding: .5rem;
+    }
+    #header-max{
+        flex-direction: column;
+        gap:0rem;
+        align-items: center;
+    }
+
+    #header-logo{
+        display:flex;
+        width:100%;
+        text-align: center;
+        justify-content: center;
+        margin-left:.5rem;
+        padding: 0;
+    }
+
+    #header-logo h1{
+        font-size:2.2rem;
+    }
+
+    #header-img{
+        max-width:50px;
+    }
+
+    #nav-bar ul{
+        width:100%;
+        justify-content:space-between;
+        text-align:center;
+
+    }
+
+    #nav-bar ul{
+        width:100%;
+        justify-content:space-between;
+    }
+
+    .nav-link{
+        padding:.2rem .4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size:smaller
+    }
+
+    .features-containers{
+        flex-direction: column;
+        align-items:center;
+        text-align:center;
+    }
+
+    #prices{
+        flex-direction:column;
+    }    
+    .prices-containers{
+        width:80%;
+        margin: 0 auto;
+    }
+}

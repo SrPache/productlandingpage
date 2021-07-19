@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/335b0394ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <header id="header">
+            <div class="max" id="header-max">
+                <a href="#" id="header-logo">
+                    <h1>Sr_Pache</h1>
+                    <img src="img/svg/icono-propio-darkred.svg" alt="logo con forma de puntero blanco" id="header-img">
+                </a>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link" href="#features">Características</a></li>
+                        <li><a class="nav-link" href="#how-it-works">Cómo funciona</a></li>
+                        <li><a class="nav-link" href="#prices">Precio</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- <p> { "description" : "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.\n\nLicensed under the Creative Commons Attribution license\nhttp://www.bigbuckbunny.org",
+              "sources" : [ "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" ],
+              "subtitle" : "By Blender Foundation",
+              "thumb" : "images/BigBuckBunny.jpg",
+              "title" : "Big Buck Bunny"
+            },</p> -->
+        <main id="main">
+            <div class="max" id="main-max">
+                <section class="max" id="suscripcion">
+                    <h2>¡Pedí tu presupuesto!</h2>
+                    <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+                        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico">
+                        <input type="submit" id="submit" value="Contactame">
+                    </form>
+                </section>
+
+                <section class="max" id="features">
+                    <div class="features-containers">
+                        <div><i class="fas fa-gem"></i></div>
+                        <div><h2>Materia prima de calidad</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p></div>
+                    </div>
+                    <div class="features-containers">
+                        <div><i class="fas fa-shipping-fast"></i></div>
+                        <div><h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p></div>
+                    </div>
+                    <div class="features-containers">
+                        <!-- <div><i class="fas fa-certificate"></i></div>-->
+                        <div><i class="fas fa-fire"></i></div>
+                        <div><h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p></div>
+                    </div>
+                </section>
+                
+                <section class="max" id="how-it-works">
+                    <h2>Descubre cómo funciona</h2>
+                    <video muted controls id="video">
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+                <section id="prices">
+                    <h2>Nuestros precios</h2>
+                    <div class="prices-containers">
+                        <div class="title-prices"><h3>Basic combo</h3></div>
+                        <div class="description-prices">
+                            <strong>$930</strong>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                        <button class="button-prices">Agregar al carrito</button>
+                    </div>
+                    <div class="prices-containers">
+                        <div class="title-prices"><h3>Full combo</h3></div>
+                        <div class="description-prices">
+                            <strong>$1200</strong>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                        <button class="button-prices">Agregar al carrito</button>
+                    </div>
+                    <div class="prices-containers">
+                        <div class="title-prices"><h3>Combo premium</h3></div>
+                        <div class="description-prices">
+                            <strong>$1800</strong>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                        <button class="button-prices">Agregar al carrito</button>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+        <footer id="footer">
+            <div id="footer-categorias">
+                <a href="#">Privacidad</a>
+                <a href="#">Formas de pago</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div>Copyright 2021 &copy;</div>
+        </footer>
+    </div>
+</body>
+</html>
